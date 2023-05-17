@@ -1,0 +1,75 @@
+@import "nullstyle.scss"
+body
+   background: #A3A3A3
+.just-container
+   text-align: center
+   padding: 200px 0
+   *
+      transition: 1.5s
+
+.wrapper
+   width: 560px
+   height: 682px
+   margin: 0 auto
+   position: relative
+   svg
+      position: absolute
+   &:hover
+      .el1
+         path
+            fill: #8F00FF
+      .el2
+         &__first
+            stop-color: #8301ED
+         &__second
+            stop-color: #D06F77
+      .el3
+         ellipse
+            fill: #C86580
+      .el4
+         &__first
+            stop-color: #120F43
+         &__second
+            stop-color: #8F00FF
+      .el5
+         ellipse
+            fill: #8F00FF
+      .el6
+         path
+            fill: #C86580
+      .el7
+         path
+            fill: #FFFFFF
+      .el8
+         transform: rotate(360deg)
+         path
+            fill: #fff
+         &__first
+            fill: #95CCFB!important
+.el1
+   top: 0
+   right: 0
+.el2
+   top: 162px
+   right: 0
+.el3
+   bottom: 0
+   right: 0
+.el4
+   left: 0
+   top: 0
+.el5
+   left: 0
+   top: 335px
+.el6
+   left: 0
+   bottom: 0
+.el7
+   right: 83px
+   bottom: 0
+.el8
+   transition: 2s
+   top: 162px
+   right: 0
+   left: 0
+   margin: 0 auto

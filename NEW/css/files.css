@@ -1,0 +1,134 @@
+.file-manager{
+    display: flex;
+    height: calc(100% - 100px);
+    padding: 0 30px;
+}
+.file-manager__title{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+.file-manager__search{
+    font-family: 'Roboto';
+    padding-left: 15px;
+    height: 30px;
+    width: 423px;
+    margin-bottom: 10px;
+background: #25244C;
+border: 1px solid #FFFFFF;
+box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2);
+border-radius: 100px;
+color: #E5E5E5;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+position: relative;
+}
+.file-manager__search::after{
+    content: './img/icons/search.svg';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.file-manager__search::placeholder{
+    opacity: 1;
+    color: #E5E5E5;
+}
+.file-manager__content{
+    width: 80%;
+}
+.file-manager__icons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 45px;
+    background-color: #25244C;
+}
+.file-manager__icon{
+  width: 45px;
+  height: 45px;
+  background-color: #25244C;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.file-manager__icon:hover{
+    background-color: #fff;
+  }
+.file-manager__icon:hover .file-manager__icon-color{
+fill: #14133F;
+}
+.file-manager__edit{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px;
+}
+.files{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 30px;
+    overflow: auto;
+    max-height: calc(100% - 50px);
+}
+.file:hover{
+    background-color: #5A588D;
+}
+.file{
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.file:hover .file__text{
+    color: #fff;
+}
+.file:hover .file__right-color{
+    fill: #fff;
+}
+.file__left{
+    display: flex;
+}
+.file__right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.file__icon{
+margin-left: 5px;
+width: 30px;
+height: 30px;
+background-color: #FDD239;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.file__text{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.file__name{
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+}
+.file__body{
+font-weight: 500;
+font-size: 8px;
+line-height: 10px;
+}
